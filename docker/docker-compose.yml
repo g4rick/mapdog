@@ -4,7 +4,7 @@ services:
   # 开发环境数据库
   postgresql_dev:
     restart: always
-    image: sameersbn/postgresql:9.6
+    image: postgres
     environment:
       - POSTGRES_USER=mapdog
       - POSTGRES_PASSWORD=mapdog
@@ -17,8 +17,8 @@ services:
     restart: always
     image: postgres
     environment:
-      - DB_USER=rick
-      - DB_PASS=rick
-      - DB_NAME=mapdog_test
+      - POSTGRES_USER=rick
+      - POSTGRES_PASSWORD=rick
+      - POSTGRES_DB=mapdog_test
     ports:
       - "5555:5432"

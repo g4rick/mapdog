@@ -50,8 +50,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :mapdog, Mapdog.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "mapdog",
+  password: "mapdog",
   database: "mapdog_dev",
   hostname: "localhost",
   port: 3456,

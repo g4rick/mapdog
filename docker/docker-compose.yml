@@ -6,9 +6,9 @@ services:
     restart: always
     image: sameersbn/postgresql:9.6
     environment:
-      - DB_USER=mapdog
-      - DB_PASS=mapdog
-      - DB_NAME=mapdog_dev
+      - POSTGRES_USER=mapdog
+      - POSTGRES_PASSWORD=mapdog
+      - POSTGRES_DB=mapdog_dev
     ports:
       - "3456:5432"
 

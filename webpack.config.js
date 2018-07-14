@@ -6,21 +6,23 @@ module.exports = function() {
   return {
     devtool: production ? 'source-map' : 'eval',
 
-    entry: './assets/index.js',
+    entry: './assets',
 
     output: {
       path: path.resolve(__dirname, './priv/static/'),
-      filename: 'app.js',
-      publishPath: '/'
+      filename: 'app.js'
     },
 
     module: {
       rules: [
         {
-          test: '/.js$/',
+          test: /\.js$/,
           exclude: '/node_modules/',
           use: {
-            loader: 'babel-loader'
+            loader: 'babel-loader',
+            options: {
+              presets: ['react', 'env']
+            }
           }
         }
       ]

@@ -16,3 +16,5 @@ erl_crash.dump
 # variables.
 /config/*.secret.exs
 yarn-error.log
+
+/priv

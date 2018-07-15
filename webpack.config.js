@@ -10,7 +10,7 @@ module.exports = function() {
 
     output: {
       path: path.resolve(__dirname, './priv/static/'),
-      filename: 'app.js'
+      filename: 'js/app.js'
     },
 
     module: {

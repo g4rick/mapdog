@@ -4,6 +4,7 @@
 /deps
 /*.ez
 /node_modules
+/priv
 
 # Generated on crash by the VM
 erl_crash.dump
@@ -16,5 +17,3 @@ erl_crash.dump
 # variables.
 /config/*.secret.exs
 yarn-error.log
-
-/priv

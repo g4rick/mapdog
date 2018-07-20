@@ -1,36 +1,8 @@
-const path = require('path');
+// TODO: 这个库是干什么的 minimist
+const args = require('minimist')(process.argv.slice(2));
+// TODO: WEBPACK_ENV NODE_ENV区别
+const env = args.env || process.env.WEBPACK_ENV || 'dev';
 
-module.exports = function() {
-  const production = process.env.NODE_ENV === 'production';
-
-  return {
-    devtool: production ? 'source-map' : 'eval',
-
-    entry: './assets',
-
-    output: {
-      path: path.resolve(__dirname, './priv/static/'),
-      filename: 'js/app.js'
-    },
-
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: '/node_modules/',
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['react', 'env']
-            }
-          }
-        }
-      ]
-    },
-
-    resolve: {
-      modules: ['node_modules', path.resolve(__dirname, 'js')],
-      extensions: ['.js']
-    }
-  }
-}
+process.env.WEBPACK_ENV = env;
+// TODO: 路径?
+module.exports = require('./config/webpack/' + env);

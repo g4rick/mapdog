@@ -27,6 +27,9 @@ module.exports = {
 
   resolve: {
     modules: ['node_modules', path.resolve(__dirname, 'js')],
-    extensions: ['.js']
+    extensions: ['.js'],
+    alias: {
+      Components: path.resolve(__dirname, 'components/')
+    }
   }
 }

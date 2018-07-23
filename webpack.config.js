@@ -1,3 +1,4 @@
+const path = require('path');
 // TODO: 这个库是干什么的 minimist
 const args = require('minimist')(process.argv.slice(2));
 // TODO: WEBPACK_ENV NODE_ENV区别

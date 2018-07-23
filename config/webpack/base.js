@@ -6,7 +6,7 @@ module.exports = {
   },
 
   output: {
-    path: './priv/static/',
+    path: path.join(__dirname, 'priv/static'), // absolute path required
     filename: '[name].js'
   },
 

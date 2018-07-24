@@ -1,5 +1,5 @@
 const path = require('path');
-
+// TODO: 学习path
 module.exports = {
   entry: {
     home: './assets/pages/home'

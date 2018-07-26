@@ -1,5 +1,4 @@
 version: '3.6'
-# TODO: 不同项目端口占用
 services:
   # 开发环境数据库
   postgresql_mapdog_dev:

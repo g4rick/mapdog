@@ -6,7 +6,8 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, '../../priv/static'), // absolute path required
+    // phx endpoint里添加了only属性 所以必须放到js里 或者修改endpoint
+    path: path.join(__dirname, '../../priv/static/js/'), // absolute path required
     filename: '[name].js'
   },
 

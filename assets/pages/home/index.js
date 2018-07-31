@@ -1,8 +1,10 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
+import UserBar from './UserBar';
 
 const Main = () => (
   <article>
+    <UserBar />
     <header>不知道用来干啥练手 就写个博客功能吧 ：）</header>
     <ul>
       <li>用户管理</li>

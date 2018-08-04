@@ -1,3 +1,4 @@
+// todo: 太麻烦了 明天创建一个自己的eslint
 module.exports = {
   "extends": "airbnb",
   "plugins": [

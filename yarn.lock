@@ -1652,9 +1652,9 @@ eslint-config-airbnb@^17.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-g4rick@^1.0.1-beta.1:
-  version "1.0.1-beta.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-g4rick/-/eslint-config-g4rick-1.0.1-beta.1.tgz#6918b45964cb9d848a2171d0511edbe69b2cdd3c"
+eslint-config-g4rick@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-g4rick/-/eslint-config-g4rick-1.0.1.tgz#5e0c2e913c1a80fc7652dc25923e80975716fbf4"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"

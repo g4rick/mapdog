@@ -13,7 +13,7 @@ const Main = () => (
       <li>首页就用来展示吧 先</li>
     </ul>
   </article>
-)
+);
 
 ReactDOM.render(
   <Main />,

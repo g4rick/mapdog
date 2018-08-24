@@ -6,10 +6,10 @@ const UserBar = ({ logined }) => (
 
 const Avatar = () => (
   <div>
-    <img src="" alt=""/>
+    <img src="" alt="" />
     <div className="go-write-btn">写文章</div>
   </div>
-)
+);
 
 const PreLogin = () => (
   <div>

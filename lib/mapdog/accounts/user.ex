@@ -6,6 +6,7 @@ defmodule Mapdog.Accounts.User do
   schema "users" do
     field :user_name, :string
     field :password, :string
+    field :mobile, :integer
     # fixme: sex type custom
     field :sex, :string
     field :real_name, :string
@@ -15,7 +16,6 @@ defmodule Mapdog.Accounts.User do
     field :verify_account_type, :string
     field :verify_account, :string
     field :avatar, :string
-    field :mobile, :integer
 
     has_one :role, Mapdog.Accounts.Role
 

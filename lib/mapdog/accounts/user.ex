@@ -17,7 +17,7 @@ defmodule Mapdog.Accounts.User do
     field :verify_account, :string
     field :avatar, :string
 
-    has_one :role, Mapdog.Accounts.Role
+    belongs_to :role, Mapdog.Accounts.Role
 
     timestamps()
   end

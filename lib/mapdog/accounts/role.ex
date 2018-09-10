@@ -8,6 +8,8 @@ defmodule Mapdog.Accounts.Role do
     field :name, :string
     field :permissions, :string
 
+    has_many :users, Mapdog.Accounts.User
+
     timestamps()
   end
 

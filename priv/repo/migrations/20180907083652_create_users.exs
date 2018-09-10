@@ -15,6 +15,8 @@ defmodule Mapdog.Repo.Migrations.CreateUsers do
       add :verify_account, :string
       add :avatar, :string
 
+      add :role, references(:users)
+
       timestamps()
     end
 

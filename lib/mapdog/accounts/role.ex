@@ -9,6 +9,7 @@ defmodule Mapdog.Accounts.Role do
     field :permissions, :string
 
     has_many :users, Mapdog.Accounts.User
+    many_to_many :permissions, Mapdog.Accounts.Permission, join_through: "roles_permissions"
 
     timestamps()
   end

@@ -6,7 +6,6 @@ defmodule Mapdog.Accounts.Role do
   schema "roles" do
     field :description, :string
     field :name, :string
-    field :permissions, :string
 
     has_many :users, Mapdog.Accounts.User
     many_to_many :permissions, Mapdog.Accounts.Permission, join_through: "roles_permissions"

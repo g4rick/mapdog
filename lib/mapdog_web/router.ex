@@ -20,7 +20,7 @@ defmodule MapdogWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", MapdogWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", MapdogWeb do
+    pipe_through :api
+  end
 end

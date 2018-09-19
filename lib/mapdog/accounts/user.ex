@@ -1,6 +1,7 @@
 defmodule Mapdog.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
+  alias Mapdog.Accounts.{Role, Credential}
 
 
   schema "users" do
@@ -17,7 +18,9 @@ defmodule Mapdog.Accounts.User do
     field :verify_account, :string
     field :avatar, :string
 
-    belongs_to :role, Mapdog.Accounts.Role
+    has_one :credential, Credential
+
+    belongs_to :role, Role
 
     timestamps()
   end

@@ -1,7 +1,10 @@
 <h2>Show User</h2>
 
 <ul>
-
+  <li>
+    <strong>Email:</strong>
+    <%= @user.credential.email %>
+  </li>
 </ul>
 
 <span><%= link "Edit", to: user_path(@conn, :edit, @user) %></span>

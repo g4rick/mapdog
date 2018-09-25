@@ -9,6 +9,7 @@ defmodule Mapdog.Repo.Migrations.CreateUsers do
 
   def change do
     create table(:users) do
+      # user_id 需要一个特殊的type 类似UID000001 然后自增
       add :user_id, :integer
       add :nick, :string
       add :avatar, :string
@@ -17,7 +18,7 @@ defmodule Mapdog.Repo.Migrations.CreateUsers do
       add :age, :integer
       add :state, :integer
       add :state_des, :string
-      ass :last_login, :utc_datetime
+      add :last_login, :utc_datetime
 
       timestamps()
     end

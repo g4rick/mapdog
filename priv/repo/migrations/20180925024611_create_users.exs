@@ -9,8 +9,8 @@ defmodule Mapdog.Repo.Migrations.CreateUsers do
 
   def change do
     create table(:users) do
-      # user_id 需要一个特殊的type 类似UID000001 然后自增
-      add :user_id, :integer
+      # user_id 员工可以考虑自增，用户可以直接使用uuuids的变型
+      add :user_id, :uuid
       add :nick, :string
       add :avatar, :string
       add :sex, :string

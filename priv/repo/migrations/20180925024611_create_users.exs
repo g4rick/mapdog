@@ -9,7 +9,6 @@ defmodule Mapdog.Repo.Migrations.CreateUsers do
 
   def change do
     create table(:users) do
-      # user_id 员工可以考虑自增，用户可以直接使用uuuids的变型
       add :user_id, :uuid
       add :nick, :string
       add :avatar, :string

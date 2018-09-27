@@ -6,7 +6,7 @@ defmodule Mapdog.Repo.Migrations.CreateUserSensitive do
       add :email, :string
       add :mobile, :string
       add :user_name, :string
-      add :user_id, references(:users)
+      add :user_id, references(:users, column: :user_id)
       add :verify_account_type, :string
       add :verify_account, :string
       add :password, :string

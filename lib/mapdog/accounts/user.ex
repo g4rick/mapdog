@@ -8,7 +8,6 @@ defmodule Mapdog.Accounts.User do
     field :user_name, :string
     field :password, :string
     field :mobile, :integer
-    # fixme: sex type custom
     field :sex, :string
     field :real_name, :string
     field :age, :integer, default: 0
